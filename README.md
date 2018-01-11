@@ -6,7 +6,7 @@ You've now learned the basics of HTML, CSS, and JavaScript. Congratulations!
 
 In this project you will use all that you know to put together a project of your own design. Take a look at some of the demos if you need some inspiration, but use your imagination and make this project your own!! It could be anything!
 
-You will work in a group of 4-5 students over the course of 8 weeks to bring your project to life. You will use a technique called "Agile Programming" (more on that below) as you work together and you will collaborate using GitHub to maintain and combine your individual contributions.
+You will work in a group of 3-4 students over the course of 8 weeks to bring your project to life. You will use a technique called "Agile Programming" (more on that below) as you work together and you will collaborate using GitHub to maintain and combine your individual contributions.
 
 ## Timeline
 
@@ -85,45 +85,17 @@ At this point in the project your web app should be a **potentially shippable pr
 
 I will be grading the final product according to the included rubric.
 
-## Your README file
+## :boom: :boom: ATTENTION!!! :boom: :boom:
 
-Thank you for reading all of this. Now that you have your own project on GitHub, you need to replace all of this file with your own information. Delete everything from this line up!
+- [x] Read this document
+- [ ] Put your app name in this file (see below)
+- [ ] Add your names to the credits (see below)
+- [ ] Delete this line and everything above it
 
-# Put your app name here!
+# :boom: Put your app name on this line! :boom:
 
 ## Description
 Describe your app here!
-
-## FAQs
-
-### Insert question here?
-Insert answer here.
-
-### Insert question here?
-Insert answer here.
-
-## Changelog
-
-### Version 1.1
-
-#### Bug fixes
- * Fixed thing
- * Fixed other thing
-
-#### Changes
- * Added thing
- * Removed thing
- * Added a group of related things:
-   * one
-   * two
-   * three
-   * four
- * If you want to be fancy, you can use a...
-   * + to indicate something added and a...
-   * - to indicate something removed, just be careful with your markdown syntax!
-
-### Version 1.0
-This is our initial release. We hope you enjoy it!
 
 ## Credits
 * Joe Schmoe
