@@ -5,4 +5,5 @@ body{
 background-image: url("images/space.gif");
 background-repeat: no-repeat;
 background-size: cover;
+background-color: black;
 }
