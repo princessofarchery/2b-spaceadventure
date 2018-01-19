@@ -2,12 +2,12 @@
 /* CSS Document */
 
 body{
-background-color: black;
+background-color: #3b3352;
 }
 
 #screen {
 	background-image: url("images/space.gif");
 	width:800px;
 	height: 600px;
-	margin: 20px auto;
+	margin: auto;
 }
