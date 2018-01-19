@@ -2,8 +2,12 @@
 /* CSS Document */
 
 body{
-background-image: url("images/space.gif");
-background-repeat: no-repeat;
-background-size: cover;
 background-color: black;
+}
+
+#screen {
+	background-image: url("images/space.gif");
+	width:800px;
+	height: 600px;
+	margin: 20px auto;
 }
