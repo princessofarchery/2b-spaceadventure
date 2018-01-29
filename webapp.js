@@ -62,7 +62,7 @@ function updateScene(s) {
 			});
 			break;
 		case"s4":
-			document.getElementById("storyline").innerHTML ="<p> If you get more food:</p> <p>Base:Apparently, that planet has an abudnace of nagoes, berries, and fart causing oranges</p><p>Harold:Ok got it.</p><p>Base: We should be able to get there in about 5 earth days. <p>Harold:After I find more food, I will build a shelter.</p>";
+			document.getElementById("storyline").innerHTML ="<p>If you get more food:</p> <p>Base:Apparently, that planet has an abudnace of nagoes, berries, and fart causing oranges</p><p>Harold:Ok got it.</p><p>Base: We should be able to get there in about 5 earth days. <p>Harold:After I find more food, I will build a shelter.</p>";
 			break;
 		case"s5":
 			document.getElementById("storyline").innerHTML ="<p>You build a shelter</p> <p>Harold: I'll go cut some wood and prepare for the night. At night, the winters go down to -4 degrees Fahrenheit.</p><p>Base: That planet has a lot of isotope base 189 which is an extremely good insulator.</p> <p>Harold: Got it</p><p> Base: Now you should go to sleep or you could stay awake and look out for more stuff during the night.</p>"; 
