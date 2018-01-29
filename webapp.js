@@ -58,17 +58,77 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Shelter";
 			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s6");
+				updateScene("s5");
 			});
 			break;
 		case"s4":
 			document.getElementById("storyline").innerHTML ="<p>Base: Apparently, that planet has an abundace of nagoes, burp causing berries, and fart causing oranges</p><p>Harold: Ok, got it.</p><p>Base: We should be able to get there in about five Earth days.<p>Harold: After I find more food, I will build a shelter.</p>";
+			//change btn1
+			document.getElementById("btn1").innerHTML = "Food";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s4");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Shelter";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s5");
+			});
 			break;
 		case"s5":
 			document.getElementById("storyline").innerHTML ="<p>Harold: I'll go cut some wood and prepare for the night. At night, the weather goes down to about -4 degrees Fahrenheit.</p><p>Base: That planet has a lot of Isotope Base 189 which is an extremely good insulator.</p><p>Harold: Got it</p><p>Base: Now you should go to sleep or you could stay awake and look out for more stuff during the night.</p>"; 
+			//change btn1
+			document.getElementById("btn1").innerHTML = "Stay Awake";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s7");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Sleep";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s6");
+			});
 			break;
 		case"s6":
-			document.getElementById("storyline").innerHTML="Harold: Ok now it is the morning currently unaware of the time.</p><p>Base: I guess we know that it is the morning and that you got to start doing something.</p><p>Harold:Alright I guess so... I'm going to go hunt for some meat now that I know that I have a steady flow of fruits.</p><p>Base: All right, do you want to fish or hunt on land?</p>";
+			document.getElementById("storyline").innerHTML="<p>Harold: Ok now it is the morning currently unaware of the time.</p><p>Base: I guess we know that it is the morning and that you got to start doing something.</p><p>Harold:Alright I guess so... I'm going to go hunt for some meat now that I know that I have a steady flow of fruits.</p><p>Base: All right, do you want to fish or hunt on land?</p>";
+			//change btn1
+			document.getElementById("btn1").innerHTML = "Fish";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s8");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Hunt";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s9");
+			});
 			break;
+		case"s7":
+			document.getElementById("storyline").innerHTML="<p>You are staying awake</p><p>Harold: Good thing I started up a fire so that I wouldnt't be cold...</p><p>Alright, now if you are awake, you should at least go hunting with darkness at your advantage</p><p>Harold:Alright, should I go fish or hunt on land?</p>";
+			//change btn1
+			document.getElementById("btn1").innerHTML = "Fish ";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s8");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Hunt";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s9");
+			});
+			break;
+		case "s8":
+		    document.getElementById("storyline").innerHTML="<p>If fishing</p> <p>Harold:Alright Im going to go fishing</p><p>Harold: Casting out the pole and hoping that I catch something at all</p><p>Base:Im picking up on something that is pulling on your pole!</p><p>Harold: My gosh! Already! ok Im reeling it in now. It seems like its some kind of a big one.... wait now it looks like a mountian and whooooooooooa... pzzzzzzz</p><p>Base: Come in Harold! are you there? I repeat ARE YOU THERE?</p><p>Does he return?</p>"; 
+			
+			document.getElementById("btn1").innerHTML = "He dead bro";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s11");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Continue?";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s10");
+			});
+			break;
+		case"s9":
+		      document.getElementById("storyline").innerHTML="<p>If Hunting</p> <p>Harold: Ok, I made a decent spear out of the poles and sharp ends I found in the lefovers of the ship and are heading for what looks like the woods...</p><p>Base: Alright, you are now in an uncharted area that has unknown dangers</p><p> Harold: Alright, I'll take the risk cause I need food. Going into the woods. Oh! I found a small chicken looking thing.... running away from me and I'm chasing it... HOLY SMOKES THERE IS A HUGE BEAST WITH GLOWING EYES</p>";
+			  break;
+			
 	}
  }
