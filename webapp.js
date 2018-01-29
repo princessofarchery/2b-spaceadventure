@@ -23,7 +23,7 @@ function updateScene(s) {
 			});
 			break;
 		case "s1":
-			document.getElementById("storyline").innerHTML = "<p>Base: Ok, try to keep it on.</p><p>Harold: Ok</p><p>Base: Wow, it appears you are in the planet...";
+			document.getElementById("storyline").innerHTML = "<p>Base: Ok, try to keep it on.</p><p>Harold: Ok</p><p>Base: Wow, it appears you are on the planet...";
 			//change btn1
 			document.getElementById("btn1").innerHTML = "Ermina 3";
 			document.getElementById("btn1").addEventListener("click", function() {
