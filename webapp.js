@@ -127,8 +127,39 @@ function updateScene(s) {
 			});
 			break;
 		case"s9":
-		      document.getElementById("storyline").innerHTML="<p>If Hunting</p> <p>Harold: Ok, I made a decent spear out of the poles and sharp ends I found in the lefovers of the ship and are heading for what looks like the woods...</p><p>Base: Alright, you are now in an uncharted area that has unknown dangers</p><p> Harold: Alright, I'll take the risk cause I need food. Going into the woods. Oh! I found a small chicken looking thing.... running away from me and I'm chasing it... HOLY SMOKES THERE IS A HUGE BEAST WITH GLOWING EYES</p>";
+		      document.getElementById("storyline").innerHTML="<p>If Hunting</p> <p>Harold: Ok, I made a decent spear out of the poles and sharp ends I found in the lefovers of the ship and are heading for what looks like the woods...</p><p>Base: Alright, you are now in an uncharted area that has unknown dangers</p><p> Harold: Alright, I'll take the risk cause I need food. Going into the woods. Oh! I found a small chicken looking thing.... running away from me and I'm chasing it... HOLY SMOKES THERE IS A HUGE BEAST WITH GLOWING EYES</p><p>Continue?</p>";
+			  
+			  document.getElementById("btn1").innerHTML = "He dead bro";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s11");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Continue?";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s12");
+			});
 			  break;
+	   case"s10":
+	          document.getElementById("storyline").innerHTML="<p>If continue for fish</p><p> Base: I repeat, are you there? Repeat ANSWER ME HAROLD</p> <p> zzzzzzz.... yea I'm back... seems like this giant fish thing was a mythical whale... it took me to a underwater world.</p> <p> Base: What are the statistics? What is the population and what species? <p> Harold: This is a place with about a 1000 in population number... with what seems like dogs that have astronaut helmets.</p><p>Base: Alright, try to get out of there as soon as you can cause we dont know if they are hostile</p> <p> Harold:I don't think I have a choice... I'm what it seems deep enough to not even see the surface.</p> <p> Base: This is a huge mess, we first have to get you back and now you gotta get out of there.</p> " ;
+			  document.getElementById("btn1").innerHTML = "Start exploring";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s14");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Immediatly trys to escape";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s13");
+			});
+			  
+			  break;
+			  
+	case"s11" :
+	       document.getElementById("storyline").innerHTML="Thanks for playing!";
+		   break;
+		   
+   case"s12":
+         document.getElementById("storyline").innerHTML="<p>Base: GET YOUR BUTT OUT OF THERE!</p><p>Harold: I AM GETTING MY BUTT out of the forest but it seems like the bear is slowing down at any rate!</p><p> Base:Alright, do you know the species of this animal";
+		 break;
 			
 	}
  }
