@@ -158,7 +158,7 @@ function updateScene(s) {
 		   break;
 		   
    case"s12":
-         document.getElementById("storyline").innerHTML="<p>Base: GET YOUR BUTT OUT OF THERE!</p><p>Harold: I AM GETTING MY BUTT out of the forest but it seems like the bear is slowing down at any rate!</p><p> Base:Alright, do you know the species of this animal";
+         document.getElementById("storyline").innerHTML="<p>Base: GET YOUR BUTT OUT OF THERE!</p><p>Harold: I AM GETTING MY BUTT out of the forest but it seems like the bear is slowing down at any rate!</p><p> Base:Alright, do you know the species of this animal </p><p>Harold: From what I see, it is a species of Smoke Eyes known for their bright eyes in the night and a huge appetite for humans.</p><p>";
 		 break;
 			
 	}
