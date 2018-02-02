@@ -155,6 +155,18 @@ function updateScene(s) {
 			  
 	case"s11" :
 	       document.getElementById("storyline").innerHTML="U dead bro...Thanks for playing!";
+	
+	  document.getElementById("btn1").innerHTML = "Start Again?";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("start");
+				  
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Start Again?";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("start");
+			});
+			});
+		
 		   break;
 		   
    case"s12":
@@ -184,6 +196,19 @@ function updateScene(s) {
 			});
 			break;
 	case"s14":
-	     document.getElementById("storyline").innerHTML="<p>Harold: It seems like it's some kind of Hig-tech city with extremely smart telepathic dogs...</p><p>Base: This is an uncharted species! This is something we have never seen before... animals with superior smarts than humankind</p><p> I'm going into thier conviencinece store</p><p> Base:what do you see?</p><p. Harold: I see beef-jerky, a   bone-a-licious juice, and I see some stuff called underwater lighters</p>  ";
+	     document.getElementById("storyline").innerHTML="<p>Harold: It seems like it's some kind of Hig-tech city with extremely smart telepathic dogs...</p><p>Base: This is an uncharted species! This is something we have never seen before... animals with superior smarts than humankind</p><p> I'm going into thier conviencinece store</p><p> Base:what do you see?</p><p. Harold: I see beef-jerky, a   bone-a-licious juice, and I see some stuff called underwater lighters</p><p>Base: Alright, use your galaxtational credit card and buy yourself some food and bone-a-licious juice.<p>Harold: Alright.... wait why are all the dogs surroudning me.... wait why are the po po poodles coming along... </p>";
+		   
+		   document.getElementById("btn1").innerHTML = "Foreign intruder";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s15");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Celebrates arrival";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s16");
+			});
+			break;
+	case"s15":
+			   document.getElementById("storyline").innerHTML="Harold:Alright I'm hitting and running away from the dogs becasue they became extremely hostile towards me.... quite frankly want to execute me</p><p> Harold: I'm putting on my suit, on my way to the end of the bubble</p> Harold: Oh jeez I'm sprinting to a huge gaping hole and here goes nothing.... AHHHHHHHHH...ZZZZZZZZZZZ</p>";
 	}
  }
