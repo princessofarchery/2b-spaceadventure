@@ -9,8 +9,13 @@ background-color: #3b3352;
 
 #screen {	
 	background-image: url("images/space.gif");
-	background-size: 1200px 900px;
-	width:1200px;
-	height: 900px;
+	background-size: 1223px 917px;
+	width:1223px;
+	height: 917px;
 	margin: auto;
+	margin-bottom: 4px;
+	border: ridge;
+	border-radius: 5px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
