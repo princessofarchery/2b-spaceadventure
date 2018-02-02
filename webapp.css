@@ -7,9 +7,10 @@ color: white;
 background-color: #3b3352;
 }
 
-#screen {
+#screen {	
 	background-image: url("images/space.gif");
-	width:800px;
-	height: 600px;
+	background-size: 1200px 900px;
+	width:1200px;
+	height: 900px;
 	margin: auto;
 }
