@@ -154,12 +154,36 @@ function updateScene(s) {
 			  break;
 			  
 	case"s11" :
-	       document.getElementById("storyline").innerHTML="Thanks for playing!";
+	       document.getElementById("storyline").innerHTML="U dead bro...Thanks for playing!";
 		   break;
 		   
    case"s12":
          document.getElementById("storyline").innerHTML="<p>Base: GET YOUR BUTT OUT OF THERE!</p><p>Harold: I AM GETTING MY BUTT out of the forest but it seems like the bear is slowing down at any rate!</p><p> Base:Alright, do you know the species of this animal </p><p>Harold: From what I see, it is a species of Smoke Eyes known for their bright eyes in the night and a huge appetite for humans.</p><p>";
+		 
+		   document.getElementById("btn1").innerHTML = "Give up and die";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s11");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Keep Running ";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s17");
+			});
 		 break;
-			
+	case"s13":
+	     document.getElementById("storyline").innerHTML="<p>Base: That's a bad idea though if you want to try.... can't stop you</p> <p> Harold: I got to do this or I will stayi n this place forever..</p><p>Base: Alright, it seems like you should be getting to the back of this city in order to exit the bubble that is protecting this dogpolis.</p><p> Harold: Alright, where am I getting my suit?</p><p> Base: YOu should be able to get a suit by sabotaging it from one of the dogs.</p> <p> Harold:Alright, I'm heading over to a schnauzer....</p>";
+		  
+		  document.getElementById("btn1").innerHTML = "Sabotage";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s15");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Change of mind";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s16");
+			});
+			break;
+	case"s14":
+	     document.getElementById("storyline").innerHTML="<p>Harold: It seems like it's some kind of Hig-tech city with extremely smart telepathic dogs...</p><p>Base: This is an uncharted species! This is something we have never seen before... animals with superior smarts than humankind</p><p> I'm going into thier conviencinece store</p><p> Base:what do you see?</p><p. Harold: I see beef-jerky, a   bone-a-licious juice, and I see some stuff called underwater lighters</p>  ";
 	}
  }
