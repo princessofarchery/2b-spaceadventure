@@ -140,7 +140,7 @@ function updateScene(s) {
 			});
 			  break;
 	   case"s10":
-	          document.getElementById("storyline").innerHTML="<p>If continue for fish</p><p> Base: I repeat, are you there? Repeat ANSWER ME HAROLD</p> <p> zzzzzzz.... yea I'm back... seems like this giant fish thing was a mythical whale... it took me to a underwater world.</p> <p> Base: What are the statistics? What is the population and what species? <p> Harold: This is a place with about a 1000 in population number... with what seems like dogs that have astronaut helmets.</p><p>Base: Alright, try to get out of there as soon as you can cause we dont know if they are hostile</p> <p> Harold:I don't think I have a choice... I'm what it seems deep enough to not even see the surface.</p> <p> Base: This is a huge mess, we first have to get you back and now you gotta get out of there.</p> " ;
+	          document.getElementById("storyline").innerHTML="<p>If continue for fish</p><p> Base: I repeat, are you there? Repeat ANSWER ME HAROLD</p> <p> zzzzzzz.... yea I'm back... seems like this lake took me to an underwater world.</p> <p> Base: What are the statistics? What is the population and what species? <p> Harold: This is a place with about a 1000 in population number... with what seems like dogs that have astronaut helmets.</p><p>Base: Alright, try to get out of there as soon as you can cause we dont know if they are hostile</p> <p> Harold:I don't think I have a choice... I'm what it seems deep enough to not even see the surface.</p> <p> Base: This is a huge mess, we first have to get you back and now you gotta get out of there.</p> " ;
 			  document.getElementById("btn1").innerHTML = "Start exploring";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s14");
@@ -172,12 +172,12 @@ function updateScene(s) {
    case"s12":
          document.getElementById("storyline").innerHTML="<p>Base: GET YOUR BUTT OUT OF THERE!</p><p>Harold: I AM GETTING MY BUTT out of the forest but it seems like the bear is slowing down at any rate!</p><p> Base:Alright, do you know the species of this animal </p><p>Harold: From what I see, it is a species of Smoke Eyes known for their bright eyes in the night and a huge appetite for humans.</p><p>";
 		 
-		   document.getElementById("btn1").innerHTML = "Give up and die";
+		   document.getElementById("btn1").innerHTML = "Play dead";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s11");
 			});
 			//change btn2
-			document.getElementById("btn2").innerHTML = "Keep Running ";
+			document.getElementById("btn2").innerHTML = "Run";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s17");
 			});
@@ -209,6 +209,61 @@ function updateScene(s) {
 			});
 			break;
 	case"s15":
-			   document.getElementById("storyline").innerHTML="Harold:Alright I'm hitting and running away from the dogs becasue they became extremely hostile towards me.... quite frankly want to execute me</p><p> Harold: I'm putting on my suit, on my way to the end of the bubble</p> Harold: Oh jeez I'm sprinting to a huge gaping hole and here goes nothing.... AHHHHHHHHH...ZZZZZZZZZZZ</p>";
+			   document.getElementById("storyline").innerHTML="<p>Harold:Alright I'm hitting and running away from the dogs becasue they became extremely hostile towards me.... quite frankly want to execute me</p><p> Harold: I'm putting on my suit, on my way to the end of the bubble</p> Harold: Oh jeez I'm sprinting to a huge gaping hole and here goes nothing.... AHHHHHHHHH...ZZZZZZZZZZZ</p>";
+			   
+			    document.getElementById("btn1").innerHTML = "Start swimming ";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s18");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Get's caught";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s19");
+			});
+			break;
+	case"s16":
+	        document.getElementById("storyline").innerHTML="<p>Harold: Gabe the dog god is welcoming me</p><p>Base: Alright say that you are from the Falcon and that you come in peace</p> <p> Harold: They  say that they are from an alternate universe and that they are the  smartest species in this counter part universe that they arrived in.</p> <p>Harold; they say that they will provide us hospitality if we do not agree to attack you</p> <p> Base: Ok do you want to stay there or do you want to still try to get out?";
+			 
+			 document.getElementById("btn1").innerHTML = "Stay forever";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s11");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Still get out";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s21");
+			});
+			
+			break;
+			
+	case"s17":
+	        document.getElementById("storyline").innerHTML="Harold: Shoot, the creature isn't slowing down, what should I do</p><p> Base: Try to find a tree to find, or water to swim in</p><p> Harold I see both, which one should I got to? </p>";
+			
+			 document.getElementById("btn1").innerHTML = " Dive in water";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s10");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Climb up tree";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s22");
+			});
+			break;
+			
+	case "s18": 
+	     document.getElemntById("storyline").innerHTML=" <p></p>";
+		 
+		  document.getElementById("btn1").innerHTML = "Foreign intruder";
+			document.getElementById("btn1").addEventListener("click", function() {
+				updateScene("s15");
+			});
+			//change btn2
+			document.getElementById("btn2").innerHTML = "Celebrates arrival";
+			document.getElementById("btn2").addEventListener("click", function() {
+				updateScene("s16");
+			});
+		 break;
+
+			   
 	}
  }
