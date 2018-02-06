@@ -253,12 +253,12 @@ function updateScene(s) {
 	case "s18": 
 	     document.getElemntById("storyline").innerHTML=" <p></p>";
 		 
-		  document.getElementById("btn1").innerHTML = "Foreign intruder";
+		  document.getElementById("btn1").innerHTML = " ";
 			document.getElementById("btn1").addEventListener("click", function() {
 				updateScene("s15");
 			});
 			//change btn2
-			document.getElementById("btn2").innerHTML = "Celebrates arrival";
+			document.getElementById("btn2").innerHTML = "Harold: The dogs are following me to the surface even though I am swimming as fast as I can!</p><p> Base: We are arriving and we have your pinpoint position</p> <p> Harold: About time that you are to come because I was about to die.</p> <p> Base: Problem is though that we cant get too close to the ground because the planet has too much of a montainous landscape.</p>";
 			document.getElementById("btn2").addEventListener("click", function() {
 				updateScene("s16");
 			});
