@@ -3,19 +3,20 @@
 
 body{
 font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+font-size: 19px;
 color: white;
 background-color: #3b3352;
+text-align: center;
 }
 
 #screen {	
 	background-image: url("images/space.gif");
-	background-size: 1223px 917px;
-	width:1223px;
-	height: 917px;
+	background-size: 1180px 885px;
+	width:1180px;
+	height: 885px;
 	margin: auto;
-	margin-bottom: 4px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	border: ridge;
-	border-radius: 5px;
-	padding-left: 4px;
-	padding-right: 4px;
+	border-radius: 25px;
 }
