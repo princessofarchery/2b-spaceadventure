@@ -135,61 +135,36 @@ function updateScene(s) {
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('s16')");
 			break;
 	case"s15":
-			   document.getElementById("storyline").innerHTML="<p>Harold: Alright, I'm hitting and running away from the dogs becasue they became extremely hostile towards me... quite frankly want to execute me</p><p>Harold: I'm putting on my suit, on my way to the end of the bubble</p><p>Harold: Oh jeez I'm sprinting to a huge gaping hole and here goes nothing.... AHHHHHHHHH...ZZZZZZZZZZZ</p>";
-			   
-			    document.getElementById("btn1").innerHTML = "Start swimming";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s18");
-			});
+			   document.getElementById("storyline").innerHTML="<p>Harold: Alright, I'm hitting and running away from the dogs because they became extremely hostile towards me... quite frankly want to execute me</p><p>Harold: I'm putting on my suit, on my way to the end of the bubble</p><p>Harold: Oh jeez I'm sprinting to a huge gaping hole and here goes nothing.... AHHHHHHHHH...ZZZZZZZZZZZ</p>";
+			document.getElementById("btn1").innerHTML = "Start swimming";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s18')");	
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Get's caught";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s19");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s19')");
 			break;
 	case"s16":
-	        document.getElementById("storyline").innerHTML="<p>Harold: Gabe the dog god is welcoming me</p><p>Base: Alright say that you are from the Falcon and that you come in peace</p> <p> Harold: They  say that they are from an alternate universe and that they are the  smartest species in this counter part universe that they arrived in.</p> <p>Harold; they say that they will provide us hospitality if we do not agree to attack you</p> <p> Base: Ok do you want to stay there or do you want to still try to get out?";
-			 
-			 document.getElementById("btn1").innerHTML = "Stay forever";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s11");
-			});
+	        document.getElementById("storyline").innerHTML="<p>Harold: Gabe the dog god is welcoming me.</p><p>Base: Alright, say that you are from the Falcon and that you come in peace.</p><p>Harold: They say that they are from an alternate universe and that they are the smartest species in this counter part universe that they arrived in.</p><p>Harold: They say that they will provide us hospitality if we do not agree to attack them.</p><p>Base: Ok, do you want to stay there or do you want to still try and get out?";
+			document.getElementById("btn1").innerHTML = "Stay forever";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s11')");
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Still get out";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s21");
-			});
-			
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s21')");
 			break;
-			
 	case"s17":
-	        document.getElementById("storyline").innerHTML="Harold: Shoot, the creature isn't slowing down, what should I do</p><p> Base: Try to find a tree to find, or water to swim in</p><p> Harold I see both, which one should I got to? </p>";
-			
-			 document.getElementById("btn1").innerHTML = " Dive in water";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s10");
-			});
+	        document.getElementById("storyline").innerHTML="Harold: Shoot, the creature isn't slowing down, what should I do?</p><p>Base: Try to find a tree to climb, or water to swim in.</p><p> Harold: I see both, which one should I go to?</p>";
+			document.getElementById("btn1").innerHTML = "Dive in water";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s10')");
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Climb up tree";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s22");
-			});
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s22')");
 			break;
-			
 	case"s18": 
-	     document.getElemntById("storyline").innerHTML=" <p>Harold: The dogs are following me to the surface even though I am swimming as fast as I can!</p><p> Base: We are arriving and we have your pinpoint position</p> <p> Harold: About time that you are to come because I was about to die.</p> <p> Base: Problem is though that we cant get too close to the ground because the planet has too much of a montainous landscape.</p></p>";
-		 
-		  document.getElementById("btn1").innerHTML = " Meet at surface of water";
-			document.getElementById("btn1").addEventListener("click", function() {
-				updateScene("s15");
-			});
+	     document.getElemntById("storyline").innerHTML="<p>Harold: The dogs are following me to the surface even though I am swimming as fast as I can!</p><p>Base: We are arriving and we have your pinpoint position.</p><p>Harold: About time that you are coming because I am about to die.</p><p>Base: Problem is though that we can't get too close to the ground because the planet has too much of a montainous landscape.</p>";
+		    document.getElementById("btn1").innerHTML = "Meet at surface of water";
+		    document.getElementById("btn1").setAttribute("onclick", "updateScene('s15')");
 			//change btn2
-			document.getElementById("btn2").innerHTML = " Go on a hill";
-			document.getElementById("btn2").addEventListener("click", function() {
-				updateScene("s16");
-			});
-		 break;
-
-			   
+			document.getElementById("btn2").innerHTML = "Go on a hill";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('s16')");
+		    break;
 	}
  }
