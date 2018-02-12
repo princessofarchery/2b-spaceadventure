@@ -51,7 +51,7 @@ function updateScene(s) {
 			document.getElementById("btn1").innerHTML ="Sleep";
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('s6')");
 			//change btn2
-			document.getElementById("btn2").innerHTML ="Shelter";
+			document.getElementById("btn2").innerHTML ="Find wood";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s5')");
 			break;
 		case"s5":
@@ -107,10 +107,10 @@ function updateScene(s) {
 			break;
 	case"s11" :
 	        document.getElementById("storyline").innerHTML="<p>U dead bro...Thanks for playing!</p>";
-			document.getElementById("btn1").innerHTML ="Start Again?";
+			document.getElementById("btn1").innerHTML ="Play Again?";
 			document.getElementById("btn1").setAttribute("onclick", "updateScene('start')");	
 			//change btn2
-			document.getElementById("btn2").innerHTML ="Start Again?";
+			document.getElementById("btn2").innerHTML ="Play Again?";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('start')");	
 		    break;
    case"s12":
@@ -162,48 +162,44 @@ function updateScene(s) {
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s22')");
 			break;
 	case"s18": 
-	     document.getElementById("storyline").innerHTML="<p>Harold: The dogs are following me to the surface even though I am swimming as fast as I can!</p><p>Base: We are arriving and we have your pinpoint position.</p><p>Harold: About time that you are coming because I am about to die.</p><p>Base: Problem is though that we can't get too close to the ground because the planet has too much of a montainous landscape.</p>";
+	       document.getElementById("storyline").innerHTML="<p>Harold: The dogs are following me to the surface even though I am swimming as fast as I can!</p><p>Base: We are arriving and we have your pinpoint position.</p><p>Harold: About time that you are coming because I am about to die.</p><p>Base: Problem is though that we can't get too close to the ground because the planet has too much of a montainous landscape.</p>";
 		    document.getElementById("btn1").innerHTML = "Meet at surface of water";
 		    document.getElementById("btn1").setAttribute("onclick", "updateScene('s21')");
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Go on a hill";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s21')");
 		    break;
-		
-case "s21":
-	       document.getElementById("storyline").innerHTML="<p>Harold:THE DOGS ARE STILL FOLLOWING ME!!! Where are you going to meet me?</p><p>Base  We will meet you near teh 2nd hill facing the third sun</p><p> Harold: They're still gaining on me, you guys may need to meet me on the way to the hill.
-		   Base: It's a risk, but a risk we're willing to take</p><p> Harold: I don't know if I can make it</p><p>Base:We seey ou, just run a little bit faster</p><p>Harold:DROP THE LADDER NOW</p><p>Yes sir.</p><p>Harold:The dogs are about 6 feet away. I'm climbing the ladder now! PULL ME UP!!!</p>";
-		
-		document.getElementById("btn1").innerHTML = " Dogs catch him ";
+   case"s21":
+	       document.getElementById("storyline").innerHTML="<p>Harold: THE DOGS ARE STILL FOLLOWING ME!!! Where are you going to meet me?</p><p>Base: We will meet you near the second hill facing the third sun.</p><p>Harold: They're still gaining on me, you guys may need to meet me on the way to the hill.</p><p>Base: It's a risk, but a risk we're willing to take.</p><p>Harold: I don't know if I can make it.</p><p>Base: We see you, just run a little bit faster.</p><p>Harold: DROP THE LADDER NOW!!!</p><p>Base: Yes sir.</p><p>Harold: The dogs are about six feet away. I'm climbing the ladder now! PULL ME UP!!!</p>";
+		    document.getElementById("btn1").innerHTML = "Dogs catch him";
 		    document.getElementById("btn1").setAttribute("onclick", "updateScene('s11')");
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Mission Completed ";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s23')");
 		    break;
-		
-	case"22":
-	      document.getElementById("storyline").innerHTML="<p>Harold: Alright, I climbed up a tree and the creature seems like it can't reach me from up here...</p><p> Base: Actually we are coming up really close and now we are coming near your planet, just give us a few minutes and we will be there to take you home sir.</p><p>Harold: Okay it seems like the creature is like destroying the tree, come quick</p><p>Base:Alright </p>";
-		 
-		 document.getElementById("btn1").innerHTML = "Get's brutally eaten";
+	case"s22":
+	      document.getElementById("storyline").innerHTML="<p>Harold: Alright, I climbed up a tree and the creature seems like it can't reach me from up here...</p><p>Base: Actually, we are coming near your planet, just give us a few minutes and we will be there to take you home sir.</p><p>Harold: THE CREATURE IS DESTROYING THE TREE, HURRY UP!!!</p><p>Base: I'm going as fast as I can.</p>";
+		    document.getElementById("btn1").innerHTML = "Get's brutally eaten";
 		    document.getElementById("btn1").setAttribute("onclick", "updateScene('s11')");
 			//change btn2
-			document.getElementById("btn2").innerHTML = " Base comes";
+			document.getElementById("btn2").innerHTML = "Base comes";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s24')");
 		    break;
-			
-	case"23":
-	      document.getElementById("storyline").innerHTML ="<p>Creators: Congratualions, you have landed back at earth in the year 2753 alive. You have shown your bravery in wilderness survival and action taking by surviving for two days</p><p>Thank you for playing Space Adventure</p>";
-		  break;
-	case"24":
-	      document.getElementById("storyline").innerHTML="<p>Base: Alright we are sweeping in, grab the ladder that we sent down.</p><p> Harold: Oh geez the creature ripped the tree and Im jumping and ..... I GOT IT!</p><p>Base: Alright, taking you away to your home planet sir</p>";
-		  
-		  document.getElementById("btn1").innerHTML = " Mission Completed";
-		    document.getElementById("btn1").setAttribute("onclick", "updateScene('s23')");
+	case"s23":
+	      document.getElementById("storyline").innerHTML ="<p>Creators: Congratulations, you have landed back on Earth in the year 2753 alive. You have shown your bravery in the wilderness, your survival skills, and enduring the unknown for two days.</p><p>Thank you for playing Space Adventure!</p>";
+		    document.getElementById("btn1").innerHTML ="Play Again?";
+			document.getElementById("btn1").setAttribute("onclick", "updateScene('start')");	
 			//change btn2
-			document.getElementById("btn2").innerHTML = "Let's go of ladder for some random reason";
-			document.getElementById("btn2").setAttribute("onclick", "updateScene('s11')");
+			document.getElementById("btn2").innerHTML ="Play Again?";
+			document.getElementById("btn2").setAttribute("onclick", "updateScene('start')");	
 		    break;
-		
-		  
+	case"s24":
+	      document.getElementById("storyline").innerHTML="<p>Base: Alright, we are sweeping in. Grab the ladder that we sent down.</p><p>Harold: Oh geez, the creature ripped the tree and I'm jumping... I GOT IT!</p><p>Base: Alright, I'm taking you home now.</p>";
+		  document.getElementById("btn1").innerHTML = "Mission Completed";
+		  document.getElementById("btn1").setAttribute("onclick", "updateScene('s23')");
+		  //change btn2
+		  document.getElementById("btn2").innerHTML = "Let's go of ladder for some random reason";
+		  document.getElementById("btn2").setAttribute("onclick", "updateScene('s11')");
+		  break; 
 	}
  }
