@@ -20,3 +20,14 @@ text-align: center;
 	border: ridge;
 	border-radius: 25px;
 }
+
+#btn1, #btn2{
+	width: 50%;
+	font-size: 24px;
+	border-radius: 25px;
+	
+}
+
+#storyline {
+	font-size: 30px;
+}
