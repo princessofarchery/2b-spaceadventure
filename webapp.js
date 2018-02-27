@@ -2,9 +2,12 @@
 
 window.onload = function() {
 	// load the cookies
-	getCookie("scene")   ;
-	// print the first scene
-	updateScene("start")  ;
+	if( getCookie("scene") == "") {
+		// print the first scene
+		updateScene("start");
+	} 
+else{updateScene(getCookie("scene"));
+}
 };
 
 function updateScene(s) {
@@ -243,16 +246,16 @@ function updateScene(s) {
 		  //save with cookies
 		  break; 
 	}
-	save_cookies(s);
+	save_cookies("scene", s);
 }
  
  // save cookie scene
- function save_cookies(s) {
+ function save_cookies(key, value) {
 	 var exdays = 300;
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires="+d.toUTCString();
-    document.cookie = "scene=" + s + ";" + expires;
+    document.cookie = key + "=" + value + ";" + expires;
  }
  
 function getCookie(cname) {
