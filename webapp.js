@@ -10,6 +10,8 @@ else{updateScene(getCookie("scene"));
 }
 };
 
+ 
+
 function updateScene(s) {
 	 switch(s) {
 	 	case "start":
@@ -29,10 +31,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Sirona";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s5')");	
-			//save with cookies
-			 	
-			break;
-		 
+			 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	break;
 		case"s2":
 			document.getElementById("storyline").innerHTML ="<p>Harold: How many light years is that from Earth?</p><p>Base: About seven light years away. This means it will take us apporximately a week to get to your location.</p><p>Harold: Ok, I think I had enough supplies to survive, but I do need some Isotope Base 23 becasue my supply of it is running out.</p><p>Base: What would happen if you didn't have it?</p><p>Harold: Isotope Base 23 is the thing that keeps me living. Base: On your planet, it is referred to as food</p><p>Harold: Should I go find some more food or should I start making a shelter?</p>";
 			//change btn1
@@ -41,10 +43,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Shelter";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s5')");
-			   //save with cookies
-			 
-			break;
-	 
+			   //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	break;
 		case"s3":
 			document.getElementById("storyline").innerHTML ="<p>Base: How many moons are there on that planet? How long is each day?</p><p>Harold: There are about seven moons and it takes about 37 hours to get through one day. The planet has no living beings except for some scattered plants.</p><p>Base: How's your food supply?</p><p>Harold: I am surviving only only on a few berries and mangoes right now, but I am starting to lose my supply of it.</p><p>Harold: I'll get more food or I'll go creater a shelter</p>";
 			//change btn1
@@ -53,8 +55,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Shelter";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s5')");
-			//save with cookies
-			 
+		 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			break;
 		case"s4":
 			document.getElementById("storyline").innerHTML ="<p>Base: Apparently, that planet has an abundace of nagoes, burp causing berries, and fart causing oranges</p><p>Harold: Ok, got it.</p><p>Base: We should be able to get there in about five Earth days.<p>Harold: I'm going to go to sleep, or go to find some wood.</p>";
@@ -64,7 +68,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Find wood";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s5')");
-			//save with cookies
+			 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			
 			break;
 		case"s5":
@@ -75,7 +82,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Sleep";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s6')");
-			//save with cookies
+		 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			 
 			break;
 		case"s6":
@@ -86,7 +96,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Hunt";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s9')");
-			//save with cookies
+			 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			 
 			break;
 		case"s7":
@@ -97,9 +110,11 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Hunt";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s9')");
-			//save with cookies
-			 		
-			break;
+			//function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
+			 break;
 		case "s8":
 		    document.getElementById("storyline").innerHTML="<p>Harold: Alright Im going to go fishing</p><p>Harold: Casting out the pole and hoping that I catch something at all</p><p>Base: I'm picking up on something that is pulling on your pole!</p><p>Harold: My gosh! Already! ok Im reeling it in now. It seems like its some kind of a big one.... wait now it looks like a mountian and whooooooooooa... pzzzzzzz</p><p>Base: Come in Harold! are you there? I repeat ARE YOU THERE?</p><p>Does he return?</p>"; 
 			document.getElementById("btn1").innerHTML ="He dead bro";
@@ -107,7 +122,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Continue?";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s10')");
-			//save with cookies
+			//function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			 break;
 		case"s9":
 		      document.getElementById("storyline").innerHTML="<p>Harold: Ok, I made a decent spear out of the poles and sharp ends I found in the lefovers of the ship and are heading for what looks like the woods...</p><p>Base: Alright, you are now in an uncharted area that has unknown dangers</p><p>Harold: Alright, I'll take the risk cause I need food. Going into the woods. Oh! I found a small chicken looking thing.... running away from me and I'm chasing it... HOLY SMOKES THERE IS A HUGE BEAST WITH GLOWING EYES</p><p>Continue?</p>";
@@ -116,8 +134,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Continue?";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s12')");
-			//save with cookies
-		 
+			//function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			break;
 	   case"s10":
 	          document.getElementById("storyline").innerHTML="<p>Base: I repeat, are you there? Repeat! ANSWER ME HAROLD!</p><p>zzzzzzz.... yea I'm back... seems like this lake took me to an underwater world.</p><p>Base: What are the statistics? What is the population and what species?<p>Harold: This is a place with about a 1000 in population number... with what seems like dogs that have astronaut helmets.</p><p>Base: Alright, try to get out of there as soon as you can cause we dont know if they are hostile.</p><p>Harold: I don't think I have a choice... I'm what it seems deep enough to not even see the surface.</p><p>Base: This is a huge mess, we first have to get you back and now you gotta get out of there.</p>" ;
@@ -126,8 +146,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Immediatly trys to escape";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s13')");	
-			//save with cookies
-			 
+			//function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			break;
 	case"s11" :
 	        document.getElementById("storyline").innerHTML="<p>U dead bro...Thanks for playing!</p>";
@@ -136,7 +158,9 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Play Again?";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('start')");
-			//save with cookies
+			 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
 			 	
 		    break;
    case"s12":
@@ -146,7 +170,10 @@ function updateScene(s) {
     		//change btn2
 			document.getElementById("btn2").innerHTML = "Run";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s17')");
-			//save with cookies
+		 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 		 
 		    break;
 	case"s13":
@@ -156,9 +183,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Change of mind";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s16')");
-			//save with cookies
-			 	
-			break;
+			  //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 break;
 	case"s14":
 	     document.getElementById("storyline").innerHTML="<p>Harold: It seems like it's some kind of high-tech city with extremely smart telepathic dogs...</p><p>Base: This is an uncharted species! This is something we have never seen before... animals with superior smarts than human kind</p><p>Harold: I'm going into thier convienience store</p><p>Base: What do you see?</p><p>Harold: I see beef-jerky, a bone-a-licious juice, and I see some stuff called underwater lighter</p><p>Base: Alright, use your galaxtational credit card and buy yourself some food and bone-a-licious juice.</p><p>Harold: Alright.... wait why are all the dogs surrounding me... wait why are the po-po poodles coming along...</p>";
 		    document.getElementById("btn1").innerHTML = "Foreign intruder";
@@ -166,8 +194,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Celebrates arrival";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s16')");
-			//save with cookies
-		 	break;
+			 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	break;
 	case"s15":
 			   document.getElementById("storyline").innerHTML="<p>Harold: Alright, I'm hitting and running away from the dogs because they became extremely hostile towards me... quite frankly want to execute me</p><p>Harold: I'm putting on my suit, on my way to the end of the bubble</p><p>Harold: Oh jeez I'm sprinting to a huge gaping hole and here goes nothing.... AHHHHHHHHH...ZZZZZZZZZZZ</p>";
 			document.getElementById("btn1").innerHTML = "Start swimming";
@@ -175,8 +205,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Get's caught";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s11')");
-			//save with cookies
-			 
+			 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			break;
 	case"s16":
 	        document.getElementById("storyline").innerHTML="<p>Harold: Gabe the dog god is welcoming me.</p><p>Base: Alright, say that you are from the Falcon and that you come in peace.</p><p>Harold: They say that they are from an alternate universe and that they are the smartest species in this counter part universe that they arrived in.</p><p>Harold: They say that they will provide us hospitality if we do not agree to attack them.</p><p>Base: Ok, do you want to stay there or do you want to still try and get out?";
@@ -185,7 +217,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Still get out";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s15')");
-			//save with cookies
+		 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			 
 			break;
 	case"s17":
@@ -195,8 +230,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Climb up tree";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s22')");
-			//save with cookies
-			 
+		 //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 			break;
 	case"s18": 
 	       document.getElementById("storyline").innerHTML="<p>Harold: The dogs are following me to the surface even though I am swimming as fast as I can!</p><p>Base: We are arriving and we have your pinpoint position.</p><p>Harold: About time that you are coming because I am about to die.</p><p>Base: Problem is though that we can't get too close to the ground because the planet has too much of a montainous landscape.</p>";
@@ -205,8 +242,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Go on a hill";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s21')");
-			//save with cookies
-			 
+		  //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 		    break;
    case"s21":
 	       document.getElementById("storyline").innerHTML="<p>Harold: THE DOGS ARE STILL FOLLOWING ME!!! Where are you going to meet me?</p><p>Base: We will meet you near the second hill facing the third sun.</p><p>Harold: They're still gaining on me, you guys may need to meet me on the way to the hill.</p><p>Base: It's a risk, but a risk we're willing to take.</p><p>Harold: I don't know if I can make it.</p><p>Base: We see you, just run a little bit faster.</p><p>Harold: DROP THE LADDER NOW!!!</p><p>Base: Yes sir.</p><p>Harold: The dogs are about six feet away. I'm climbing the ladder now! PULL ME UP!!!</p>";
@@ -215,7 +254,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Mission Completed ";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s23')");
-			//save with cookies
+			  //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 		    break;
 	case"s22":
 	      document.getElementById("storyline").innerHTML="<p>Harold: Alright, I climbed up a tree and the creature seems like it can't reach me from up here...</p><p>Base: Actually, we are coming near your planet, just give us a few minutes and we will be there to take you home sir.</p><p>Harold: THE CREATURE IS DESTROYING THE TREE, HURRY UP!!!</p><p>Base: I'm going as fast as I can.</p>";
@@ -224,7 +266,11 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML = "Base comes";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('s24')");
-			//save with cookies
+			   //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
+			 	
 		    break;
 	case"s23":
 	      document.getElementById("storyline").innerHTML ="<p>Creators: Congratulations, you have landed back on Earth in the year 2753 alive. You have shown your bravery in the wilderness, your survival skills, and enduring the unknown for two days.</p><p>Thank you for playing Space Adventure!</p>";
@@ -233,7 +279,10 @@ function updateScene(s) {
 			//change btn2
 			document.getElementById("btn2").innerHTML ="Play Again?";
 			document.getElementById("btn2").setAttribute("onclick", "updateScene('start')");
-			//save with cookies
+			  //function to reset the story
+			document.getElementById("Reset").innerHTML="reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 		    break;
 			 
 	case"s24":
@@ -243,7 +292,10 @@ function updateScene(s) {
 		  //change btn2
 		  document.getElementById("btn2").innerHTML = "Let's go of ladder for some random reason";
 		  document.getElementById("btn2").setAttribute("onclick", "updateScene('s11')");
-		  //save with cookies
+		    //function to reset the story
+			document.getElementById("Reset").innerHTML=" Reset";
+			document.getElementById("Reset").setAttribute("onclick","updateScene('start')");
+			 	
 		  break; 
 	}
 	save_cookies("scene", s);
